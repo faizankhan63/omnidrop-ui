@@ -1,0 +1,64 @@
+.cardMain {
+  max-width: 420px;
+  width: fit-content;
+  min-height: 582px;
+  border-radius: 20px;
+  border: 1px solid #ffacff;
+  overflow: hidden;
+}
+
+.topSection {
+  height: 50%;
+  position: relative;
+  overflow: hiddens;
+}
+
+.cardImage {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+.gradientSection {
+  height: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(118, 28, 182, 0.5) -19.67%,
+    rgba(0, 0, 0, 0.15) 129.79%
+  );
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.titleClass {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #242424;
+  max-width: 150px;
+}
+
+.descClass {
+  font-weight: 400;
+  font-size: 14px;
+  leading-trim: Cap height;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #242424;
+}
+
+.btnClass {
+  background-color: white;
+  height: 39px;
+  width: 100%;
+  justify-content: space-between;
+}

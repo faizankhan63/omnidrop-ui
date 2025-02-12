@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Chillax";
+  src: url("../src/assets/fonts/Chillax-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Chillax";
+  src: url("../src/assets/fonts/Chillax-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Chillax";
+  src: url("../src/assets/fonts/Chillax-Semibold.otf") format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Chillax";
+  src: url("../src/assets/fonts/Chillax-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Chillax", sans-serif;
+}
+button {
+  font-family: "Chillax", sans-serif;
+}

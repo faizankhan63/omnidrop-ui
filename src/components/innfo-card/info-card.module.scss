@@ -1,0 +1,41 @@
+.main {
+  background: red;
+  position: relative;
+  max-width: 420px;
+  height: 352px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(69, 64, 65, 0.4485) 0%,
+    rgba(29, 28, 32, 0) 110.4%
+  );
+  padding: 33px;
+  border: 1px solid #ffffff14;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: start;
+  margin-bottom: 15px;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22.5px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: start;
+}
+
+.imageClass {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
