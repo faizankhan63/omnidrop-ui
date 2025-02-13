@@ -1,0 +1,63 @@
+.MainWrapper {
+  margin-top: 100px;
+  background: url("../../assets/omni-bg.png") no-repeat center center;
+  background-size: cover;
+  background-color: black;
+  width: 100vw;
+  height: 591px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  @media (max-width: 768px) {
+    height: 491px;
+  }
+  @media (max-width: 450px) {
+    gap: 40px;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 88px;
+    line-height: 80px;
+    letter-spacing: -2.5%;
+    text-align: center;
+    color: #ffffff;
+
+    @media (max-width: 768px) {
+      font-size: 50px;
+      line-height: 48px;
+    }
+    @media (max-width: 450px) {
+      font-size: 40px;
+      line-height: 38px;
+    }
+  }
+}
+
+.btnClass {
+  width: 226px;
+  height: 56px;
+  border-radius: 200px;
+  background-color: #ffffff;
+  justify-content: center !important;
+  padding: 5px !important;
+  position: relative;
+  padding-right: 35px !important;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0%;
+
+  @media (max-width: 450px) {
+  }
+
+  img {
+    position: absolute;
+    right: 5px;
+  }
+}

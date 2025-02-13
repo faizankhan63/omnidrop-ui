@@ -1,0 +1,35 @@
+.faqMain {
+  padding: 0px 50px;
+  margin-top: 100px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0px 20px;
+  }
+}
+
+.faqIndicator {
+  width: fit-content;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 57px;
+  padding: 2px 16px;
+  background: #f4f4f4;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #242424;
+}
+
+.faqHeading {
+  font-weight: 400;
+  font-size: calc(35px + (60 - 35) * (100vw - 375px) / (1440 - 375));
+  line-height: 75px;
+  letter-spacing: -2.5%;
+  text-align: left;
+  max-width: 510px;
+  margin-top: 30px;
+}

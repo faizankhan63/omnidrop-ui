@@ -14,12 +14,9 @@
   max-width: 100%;
   border-radius: 30px;
   padding-top: 9px;
-  box-sizing: border-box;
-  background: radial-gradient(circle at 80% 20%, #3b385b 20%, transparent 70%),
-    radial-gradient(circle at 20% 30%, #568182 20%, transparent 70%),
-    radial-gradient(circle at 80% 20%, #3b385b 20%, transparent 70%),
-    radial-gradient(circle at 70% 60%, #000000 20%, transparent 70%),
-    linear-gradient(to bottom, transparent, #000000);
+  background: url("../../assets/omni-bg.png") no-repeat center center;
+  background-size: cover;
+  background-color: black;
 }
 
 .centerDiv {
@@ -31,6 +28,12 @@
   align-items: flex-end;
   padding: 0px 90px;
   margin-top: 40px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0px 45px;
+  }
 }
 
 .upperFlex {
@@ -53,6 +56,17 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .buttonWhite {
@@ -67,6 +81,11 @@
   padding-right: 50px;
   margin-top: -50px;
   position: relative;
+
+  @media (max-width: 650px) {
+    padding-right: 0px;
+    justify-content: center;
+  }
 }
 
 .gradientText {
@@ -74,9 +93,18 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: calc(300px + (383 - 350) * (100vw - 375px) / (1440 - 375));
-
   font-weight: bold;
   line-height: 310px;
+  @media (max-width: 950px) {
+    font-size: 250px;
+  }
+  @media (max-width: 768px) {
+    font-size: 150px;
+    line-height: 150px;
+  }
+  @media (max-width: 425px) {
+    font-size: 120px;
+  }
 }
 .gradientTextBottom {
   background: linear-gradient(180deg, #ffffff 0%, rgba(153, 153, 153, 0) 100%);
@@ -90,6 +118,17 @@
   padding-right: 30px;
   overflow: visible;
   white-space: nowrap;
+  @media (max-width: 950px) {
+    font-size: 250px;
+  }
+  @media (max-width: 768px) {
+    font-size: 150px;
+    line-height: 150px;
+    letter-spacing: -21.33px;
+  }
+  @media (max-width: 425px) {
+    font-size: 120px;
+  }
 }
 
 .lowerDiv {

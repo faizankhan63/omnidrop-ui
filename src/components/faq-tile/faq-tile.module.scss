@@ -1,0 +1,56 @@
+.main {
+  background-color: #f4f4f4;
+  height: fit-content;
+  border-radius: 16px;
+  padding: 40px;
+  margin: 30px 0px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.faqQuestion {
+  font-weight: 500;
+  font-size: calc(20px + (24 - 20) * (100vw - 375px) / (1440 - 375));
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #242424;
+  text-align: start;
+}
+
+.faqAnswer {
+  font-weight: 400;
+  font-size: calc(16px + (18 - 16) * (100vw - 375px) / (1440 - 375));
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #242424;
+  text-align: start;
+  margin-top: 10px;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.show {
+  max-height: 100px;
+  opacity: 1;
+}
+
+.hide {
+  max-height: 0;
+  opacity: 0;
+}
+
+.arrowIcon {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+}
+
+.rotate {
+  transform: rotate(0deg);
+}

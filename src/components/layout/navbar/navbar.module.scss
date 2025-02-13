@@ -1,7 +1,10 @@
-.nav { 
+.nav {
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px;
+  @media (max-width: 425px) {
+    padding: 0px 20px;
+  }
 }
